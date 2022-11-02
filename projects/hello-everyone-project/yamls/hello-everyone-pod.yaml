@@ -18,7 +18,7 @@ spec:
         run: hello-everyone-app
     spec:
       containers:
-      - image: nginx
+      - image: 88915020/aghouchaf_nginx
         name: hello-everyone-app
         resources: {}
 status: {}
