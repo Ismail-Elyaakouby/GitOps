@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: hello-everyone-app
+  name: hello-everyone-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: hello-everyone-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: hello-everyone-app
+    spec:
+      containers:
+      - image: nginx
+        name: hello-everyone-app
+        resources: {}
+status: {}
