@@ -41,7 +41,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        run: hello-everyone-app
+        run: hello-everyone-app2
     spec:
       containers:
       - image: 88915020/aghouchaf_nginx
