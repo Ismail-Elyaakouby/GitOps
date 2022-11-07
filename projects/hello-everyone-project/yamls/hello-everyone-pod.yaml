@@ -47,5 +47,5 @@ spec:
       - image: 88915020/aghouchaf_nginx
         name: hello-everyone-app2
         resources: {}
-    nodeSelector:
-      winw: winw
+      nodeSelector:
+        winw: winw
