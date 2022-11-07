@@ -22,3 +22,30 @@ spec:
         name: hello-everyone-app
         resources: {}
 status: {}
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: hello-everyone-app2
+  name: hello-everyone-app2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: hello-everyone-app2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: hello-everyone-app
+    spec:
+      containers:
+      - image: 88915020/aghouchaf_nginx
+        name: hello-everyone-app2
+        resources: {}
+    nodeSelector:
+      winw: winw
